@@ -1,0 +1,5 @@
+metin = input('Lütfen metninizi yazınız : ')
+bolunmus_metin = metin.split()
+sonuc = set(bolunmus_metin)
+sonuc_sirali = sorted(sonuc)
+print(sonuc_sirali)
