@@ -3,7 +3,6 @@ Siparisler = {
     105  : {'Ürün Adı : ' : 'Bilgisayar' , 'Ürün Fiyatı : ' : '1000'+ ' ₺' , 'Sipariş Tarihi : ' : '23.08.2021' },
     108  : {'Ürün Adı : ' : 'Projeksiyon' , 'Ürün Fiyatı : ' : '3500'+ ' ₺' , 'Sipariş Tarihi : ' : '07.01.2022'}
              }
-
 cevap = input('Toplam kaç adet siparişiniz olduğunu öğrenmek istiyorsanız ADET , siparis detaylarınızı görmek için DETAY yazınız. :  ')
 cevap_liste = [cevap.upper()]
 if 'DETAY' in cevap_liste:
@@ -14,4 +13,4 @@ if 'DETAY' in cevap_liste:
 
 if 'ADET' in cevap_liste:
     print('Toplam' , len(Siparisler) , 'adet siparişiniz bulunmaktadır.')
-    print('Sipariş Numaralarınız [ @@@@@@ BURASI YARIM KALDI SİPARİŞ NUMARALARINI GETİREMEDİM @@@@@@ ')
+    print(f'Sipariş Numaralarınız {list(Siparisler.keys())} ')
